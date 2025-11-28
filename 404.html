@@ -1,22 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // https://github.com/rafgraph/spa-github-pages
-      var pathSegmentsToKeep = 1;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-    </script>
-  </head>
-  <body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailor Management - Stitch Perfect</title>
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      
+      /* Lenis recommended styles */
+      html.lenis, html.lenis body {
+        height: auto;
+      }
+      .lenis.lenis-smooth {
+        scroll-behavior: auto !important;
+      }
+      .lenis.lenis-smooth [data-lenis-prevent] {
+        overscroll-behavior: contain;
+      }
+      .lenis.lenis-stopped {
+        overflow: hidden;
+      }
+      .lenis.lenis-scrolling iframe {
+        pointer-events: none;
+      }
+    </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^6.22.0",
+    "@remix-run/router": "https://aistudiocdn.com/@remix-run/router@1.15.0",
+    "lenis": "https://aistudiocdn.com/lenis@^1.0.42"
+  }
+}
+  </script>
+  <script type="module" crossorigin src="/potential-goggles/assets/index-BgBjjSjz.js"></script>
+  <link rel="stylesheet" crossorigin href="/potential-goggles/assets/index-BLWU1YNy.css">
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-brand-400 selection:text-black">
+    <div id="root"></div>
   </body>
 </html>
